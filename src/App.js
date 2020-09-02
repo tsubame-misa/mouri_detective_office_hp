@@ -6,7 +6,7 @@ const Profile = () => {
   return (
     <div>
       毛利小五郎
-      <Link to="/">
+      <Link to="/mouri_detective_office_hp">
         <button>back</button>
       </Link>
     </div>
@@ -17,7 +17,7 @@ const Qestion = () => {
   return (
     <div>
       Q&amp;A
-      <Link to="/">
+      <Link to="/mouri_detective_office_hp">
         <button>back</button>
       </Link>
     </div>
@@ -28,7 +28,7 @@ const OverViwe = () => {
   return (
     <div>
       事務所概要
-      <Link to="/">
+      <Link to="/mouri_detective_office_hp">
         <button>back</button>
       </Link>
     </div>
@@ -39,7 +39,7 @@ const Contact = () => {
   return (
     <div>
       お問い合わせ
-      <Link to="/">
+      <Link to="/mouri_detective_office_hp">
         <button>back</button>
       </Link>
     </div>
@@ -50,7 +50,7 @@ const Item = () => {
   return (
     <div>
       調査項目
-      <Link to="/">
+      <Link to="/mouri_detective_office_hp">
         <button>back</button>
       </Link>
     </div>
@@ -61,7 +61,7 @@ const Flow = () => {
   return (
     <div>
       調査の流れ
-      <Link to="/">
+      <Link to="/mouri_detective_office_hp">
         <button>back</button>
       </Link>
     </div>
@@ -95,7 +95,7 @@ const Home = () => {
 
             <div className="columns">
               <div className="column is-3">
-                <Link to="/item">
+                <Link to="/mouri_detective_office_hp/item">
                   <button
                     className="button is-rounded"
                     style={{
@@ -109,7 +109,7 @@ const Home = () => {
                 </Link>
               </div>
               <div className="column is-3">
-                <Link to="/profile">
+                <Link to="/mouri_detective_office_hp/profile">
                   <button
                     className="button is-rounded"
                     style={{
@@ -126,7 +126,7 @@ const Home = () => {
 
             <div className="columns">
               <div className="column is-3">
-                <Link to="/profile">
+                <Link to="/mouri_detective_office_hp/profile">
                   <button
                     className="button is-rounded"
                     style={{
@@ -140,7 +140,7 @@ const Home = () => {
                 </Link>
               </div>
               <div className="column is-3" style={{ width: "90%" }}>
-                <Link to="/profile">
+                <Link to="/mouri_detective_office_hp/profile">
                   <button
                     className="button is-rounded"
                     style={{
@@ -157,7 +157,7 @@ const Home = () => {
 
             <div className="columns">
               <div className="column is-3">
-                <Link to="/profile">
+                <Link to="/mouri_detective_office_hp/profile">
                   <button
                     className="button is-rounded"
                     style={{
@@ -171,7 +171,7 @@ const Home = () => {
                 </Link>
               </div>
               <div className="column is-3">
-                <Link to="/profile">
+                <Link to="/mouri_detective_office_hp/profile">
                   <button
                     className="button is-rounded"
                     style={{
@@ -200,13 +200,25 @@ const App = () => {
     <div>
       <Router>
         <div>
-          <Route path="/" exact component={Home} />
-          <Route path="/profile" component={Profile} />
-          <Route path="/item" component={Item} />
-          <Route path="/flow" component={Flow} />
-          <Route path="/overview" component={OverViwe} />
-          <Router path="/contact" component={Contact} />
-          <Router path="/question" component={Qestion} />
+          <Route path="/mouri_detective_office_hp" exact component={Home} />
+          <Route
+            path="/mouri_detective_office_hp/profile"
+            component={Profile}
+          />
+          <Route path="/mouri_detective_office_hp/item" component={Item} />
+          <Route path="/mouri_detective_office_hp/flow" component={Flow} />
+          <Route
+            path="/mouri_detective_office_hp/overview"
+            component={OverViwe}
+          />
+          <Router
+            path="/mouri_detective_office_hp/contact"
+            component={Contact}
+          />
+          <Router
+            path="/mouri_detective_office_hp/question"
+            component={Qestion}
+          />
         </div>
       </Router>
     </div>
