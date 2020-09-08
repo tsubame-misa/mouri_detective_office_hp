@@ -5,10 +5,29 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 const Profile = () => {
   return (
     <div>
-      毛利小五郎
-      <Link to="/mouri_detective_office_hp">
-        <button>back</button>
-      </Link>
+      <div className="Body_bw">
+        <div className="hero-body">
+          <h
+            className="title is-0"
+            style={{
+              color: "black",
+              fontFamily: "MS PMincho",
+              fontSize: "7.8vw",
+              paddingBottom: "1vmin",
+            }}
+          >
+            プロフィール
+          </h>
+          <ul>帝丹高校卒業</ul>
+          <ul>米花大学卒業</ul>
+          <ul>警視庁捜査一課強行犯係</ul>
+          <ul>毛利探偵事務所設立 </ul>
+        </div>
+
+        <Link to="/mouri_detective_office_hp">
+          <button>back</button>
+        </Link>
+      </div>
     </div>
   );
 };
@@ -38,7 +57,26 @@ const OverViwe = () => {
 const Contact = () => {
   return (
     <div>
-      お問い合わせ
+      <div className="Body_bw">
+        <div className="hero-body">
+          <h
+            className="title is-0"
+            style={{
+              color: "black",
+              fontFamily: "MS PMincho",
+              fontSize: "7.8vw",
+              paddingBottom: "1vmin",
+            }}
+          >
+            お問い合わせ
+          </h>
+          <div>メールアドレス</div>
+          <div>電話番号</div>
+          <div>住所</div>
+          <div>東京都米花市米化町5丁目毛利探偵事務所</div>
+        </div>
+      </div>
+
       <Link to="/mouri_detective_office_hp">
         <button>back</button>
       </Link>
@@ -49,10 +87,52 @@ const Contact = () => {
 const Item = () => {
   return (
     <div>
-      調査項目
-      <Link to="/mouri_detective_office_hp">
-        <button>back</button>
-      </Link>
+      <header></header>
+
+      <div className="Body_bw">
+        <div className="hero-body">
+          <h
+            className="title is-0"
+            style={{
+              color: "black",
+              fontFamily: "MS PMincho",
+              fontSize: "8.8vw",
+              paddingBottom: "1vmin",
+            }}
+          >
+            調査項目
+          </h>
+          <div>
+            <div className="columns">
+              <div className="column is-3">浮気・不倫調査</div>
+              <div className="column is-3">素行調査</div>
+            </div>
+            <div className="columns">
+              <div className="column is-3">所在調査</div>
+              <div className="column is-3">身元調査</div>
+            </div>
+            <div className="columns">
+              <div className="column is-3">婚前調査</div>
+              <div className="column is-3">企業調査</div>
+            </div>
+            <div className="columns">
+              <div className="column is-3">詐欺調査</div>
+              <div className="column is-3">企業調査</div>
+            </div>
+            <div className="columns">
+              <div className="column is-3">詐欺調査</div>
+              <div className="column is-3">金銭トラブル調査</div>
+            </div>
+            <div className="columns">
+              <div className="column is-3">ストーカー調査</div>
+              <div className="column is-3">盗聴器発見調査</div>
+            </div>
+          </div>
+        </div>
+        <Link to="/mouri_detective_office_hp">
+          <button>back</button>{" "}
+        </Link>
+      </div>
     </div>
   );
 };
@@ -80,8 +160,8 @@ const Home = () => {
               style={{
                 color: "#FD0000",
                 fontFamily: "MS PMincho",
-                fontSize: "8.2vmax",
-                paddingBottom: "1vmax",
+                fontSize: "8.8vw",
+                paddingBottom: "1vmin",
               }}
             >
               毛利小五郎
@@ -91,7 +171,7 @@ const Home = () => {
             <p>お困りのことがあったら、</p>
             <p>いつでもご依頼を！</p>
             <p>眠りの小五郎がバッチリ</p>
-            <p style={{ paddingBottom: "1vmax" }}>解決いたします！</p>
+            <p style={{ paddingBottom: "1vh" }}>解決いたします！</p>
 
             <div className="columns">
               <div className="column is-3">
@@ -101,7 +181,7 @@ const Home = () => {
                     style={{
                       color: "#ffffff",
                       backgroundColor: "#ED4491",
-                      fontSize: "1.8vmax",
+                      fontSize: "1.8vw",
                     }}
                   >
                     調査項目
@@ -115,7 +195,7 @@ const Home = () => {
                     style={{
                       color: "#ffffff",
                       backgroundColor: "#f98730",
-                      fontSize: "1.8vmax",
+                      fontSize: "1.8vw",
                     }}
                   >
                     プロフィール
@@ -132,7 +212,7 @@ const Home = () => {
                     style={{
                       color: "#ffffff",
                       backgroundColor: "#FAC80F",
-                      fontSize: "1.8vmax",
+                      fontSize: "1.8vw",
                     }}
                   >
                     調査の流れ
@@ -146,7 +226,7 @@ const Home = () => {
                     style={{
                       color: "#ffffff",
                       backgroundColor: "#23B44E",
-                      fontSize: "1.8vmax",
+                      fontSize: "1.8vw",
                     }}
                   >
                     事務所概要
@@ -157,13 +237,13 @@ const Home = () => {
 
             <div className="columns">
               <div className="column is-3">
-                <Link to="/mouri_detective_office_hp/profile">
+                <Link to="/mouri_detective_office_hp/contact">
                   <button
                     className="button is-rounded"
                     style={{
                       color: "#ffffff",
                       backgroundColor: "#214CB2",
-                      fontSize: "1.8vmax",
+                      fontSize: "1.8vw",
                     }}
                   >
                     お問い合わせ
@@ -171,13 +251,13 @@ const Home = () => {
                 </Link>
               </div>
               <div className="column is-3">
-                <Link to="/mouri_detective_office_hp/profile">
+                <Link to="/mouri_detective_office_hp/question">
                   <button
                     className="button is-rounded"
                     style={{
                       color: "#ffffff",
                       backgroundColor: "#A229A9",
-                      fontSize: "1.8vmax",
+                      fontSize: "1.8vw",
                     }}
                   >
                     Q&amp;A
