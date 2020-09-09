@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "65af13593dc0a62b769e3e32777f461a",
+    "revision": "c42522441835f195e5fae41c999f78ae",
     "url": "/mouri_detective_office_hp/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/mouri_detective_office_hp/static/css/2.3807f13a.chunk.css"
   },
   {
-    "revision": "82f8e65f813790478e8c",
-    "url": "/mouri_detective_office_hp/static/css/main.b8e8a288.chunk.css"
+    "revision": "870b5be5dbc3444459b5",
+    "url": "/mouri_detective_office_hp/static/css/main.0b78e9d8.chunk.css"
   },
   {
     "revision": "3e0e53a817c8d6869409",
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/mouri_detective_office_hp/static/js/2.da045a9d.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "82f8e65f813790478e8c",
-    "url": "/mouri_detective_office_hp/static/js/main.6ed3c830.chunk.js"
+    "revision": "870b5be5dbc3444459b5",
+    "url": "/mouri_detective_office_hp/static/js/main.68002e44.chunk.js"
   },
   {
     "revision": "0f89c9f49a5e5f6145ea",
