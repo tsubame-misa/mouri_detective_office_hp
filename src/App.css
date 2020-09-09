@@ -27,8 +27,43 @@ button {
   background-repeat: no-repeat;
 }
 
-p {
+.home_p {
   font-size: 4vw;
   font-weight: 10vmax;
   font-family: "MS PMincho";
+}
+
+.pro {
+  font-size: 3.5vmax;
+  padding-top: 1h;
+}
+
+.pro1 {
+  color: black;
+  font-size: 4vmax;
+  font-family: "MS PMincho";
+  font-size: 4.5vmax;
+  padding-top: 3.5vh;
+}
+
+.tyo {
+  font-size: 2.3vmax;
+}
+
+.contact {
+  font-size: 2.3vmax;
+  padding-top: 1vmax;
+  border-bottom: solid;
+  display: inline-block;
+}
+
+.contact2 {
+  font-size: 2.3vmax;
+  padding-top: 1vmax;
+  padding-bottom: 1vmax;
+}
+
+.flow {
+  padding-top: 1vmax;
+  font-size: 2.3vmax;
 }

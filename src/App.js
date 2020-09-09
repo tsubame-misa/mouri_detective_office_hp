@@ -13,21 +13,41 @@ const Profile = () => {
               color: "black",
               fontFamily: "MS PMincho",
               fontSize: "7.8vw",
+              paddingTop: "2vh",
               paddingBottom: "1vmin",
             }}
           >
             プロフィール
           </h>
-          <ul>帝丹高校卒業</ul>
-          <ul>米花大学卒業</ul>
-          <ul>警視庁捜査一課強行犯係</ul>
-          <ul>毛利探偵事務所設立 </ul>
-        </div>
+          <div className="section">
+            <ul className="pro">19xx: 帝丹高校卒業</ul>
+            <ul className="pro">19xo: 米花大学卒業</ul>
+            <ul className="pro">19oo: 警視庁捜査一課 勤務</ul>
+            <ul className="pro">19ox: 毛利探偵事務所設立 </ul>
+            <ul className="pro1">
+              この眠りの小五郎が
+              <br></br>どんな事件も解決いたします！
+            </ul>
+          </div>
 
-        <Link to="/mouri_detective_office_hp">
-          <button>back</button>
-        </Link>
+          <Link to="/mouri_detective_office_hp">
+            <button
+              className="button back_button"
+              style={{ fontSize: "2vmax" }}
+            >
+              back
+            </button>
+          </Link>
+        </div>
       </div>
+      <footer className="footer">
+        <div
+          className="content has-text-centered"
+          style={{ fontSize: "1.8vmax" }}
+        >
+          @mourikogorou
+        </div>
+      </footer>
     </div>
   );
 };
@@ -35,21 +55,80 @@ const Profile = () => {
 const Qestion = () => {
   return (
     <div>
-      Q&amp;A
-      <Link to="/mouri_detective_office_hp">
-        <button>back</button>
-      </Link>
+      <div className="Body_bw">
+        <div className="hero-body">
+          <h
+            className="title is-0"
+            style={{
+              color: "black",
+              fontFamily: "MS PMincho",
+              fontSize: "7.8vw",
+              paddingBottom: "1vmin",
+            }}
+          >
+            Q&amp;A
+          </h>
+
+          <p style={{ margin: "6vmax", fontSize: "3vmax" }}>これから作るよ！</p>
+
+          <Link to="/mouri_detective_office_hp">
+            <button
+              className="button back_button"
+              style={{ fontSize: "2vmax" }}
+            >
+              back
+            </button>
+          </Link>
+        </div>
+      </div>
+      <footer className="footer">
+        <div
+          className="content has-text-centered"
+          style={{ fontSize: "1.8vmax" }}
+        >
+          @mourikogorou
+        </div>
+      </footer>
     </div>
   );
 };
 
-const OverViwe = () => {
+const OverView = () => {
   return (
     <div>
-      事務所概要
-      <Link to="/mouri_detective_office_hp">
-        <button>back</button>
-      </Link>
+      <div className="Body_bw">
+        <div className="hero-body">
+          <h
+            className="title is-0"
+            style={{
+              color: "black",
+              fontFamily: "MS PMincho",
+              fontSize: "6.8vw",
+              paddingBottom: "1vmin",
+            }}
+          >
+            事務所概要
+          </h>
+          <p style={{ margin: "6vmax", fontSize: "3vmax" }}>これから作るよ！</p>
+
+          <Link to="/mouri_detective_office_hp">
+            <button
+              className="button back_button"
+              style={{ fontSize: "2vmax" }}
+            >
+              back
+            </button>
+          </Link>
+        </div>
+      </div>
+      <footer className="footer">
+        <div
+          className="content has-text-centered"
+          style={{ fontSize: "1.8vmax" }}
+        >
+          @mourikogorou
+        </div>
+      </footer>
     </div>
   );
 };
@@ -64,22 +143,38 @@ const Contact = () => {
             style={{
               color: "black",
               fontFamily: "MS PMincho",
-              fontSize: "7.8vw",
+              fontSize: "6.8vw",
               paddingBottom: "1vmin",
             }}
           >
             お問い合わせ
           </h>
-          <div>メールアドレス</div>
-          <div>電話番号</div>
-          <div>住所</div>
-          <div>東京都米花市米化町5丁目毛利探偵事務所</div>
+          <div className="section">
+            <ul className="contact">電話番号</ul>
+            <ul className="contact2">○○○-××××-○○○○</ul>
+            <ul className="contact">メールアドレス</ul>
+            <ul className="contact2">mourikogorou@xxxx.com</ul>
+            <ul className="contact">住所</ul>
+            <ul className="contact2">東京都米花町5丁目毛利探偵事務所</ul>
+          </div>
+          <Link to="/mouri_detective_office_hp">
+            <button
+              className="button back_button"
+              style={{ fontSize: "2vmax" }}
+            >
+              back
+            </button>
+          </Link>
         </div>
       </div>
-
-      <Link to="/mouri_detective_office_hp">
-        <button>back</button>
-      </Link>
+      <footer className="footer">
+        <div
+          className="content has-text-centered"
+          style={{ fontSize: "1.8vmax" }}
+        >
+          @mourikogorou
+        </div>
+      </footer>
     </div>
   );
 };
@@ -102,37 +197,51 @@ const Item = () => {
           >
             調査項目
           </h>
-          <div>
+          <div className="section" style={{ margin: "2vmax" }}>
             <div className="columns">
-              <div className="column is-3">浮気・不倫調査</div>
-              <div className="column is-3">素行調査</div>
+              <div className="column is-3 tyo">浮気・不倫調査</div>
+              <div className="column is-3 tyo">素行調査</div>
             </div>
             <div className="columns">
-              <div className="column is-3">所在調査</div>
-              <div className="column is-3">身元調査</div>
+              <div className="column is-3 tyo">所在調査</div>
+              <div className="column is-3 tyo">身元調査</div>
             </div>
             <div className="columns">
-              <div className="column is-3">婚前調査</div>
-              <div className="column is-3">企業調査</div>
+              <div className="column is-3 tyo">婚前調査</div>
+              <div className="column is-3 tyo">企業調査</div>
             </div>
             <div className="columns">
-              <div className="column is-3">詐欺調査</div>
-              <div className="column is-3">企業調査</div>
+              <div className="column is-3 tyo">詐欺調査</div>
+              <div className="column is-3 tyo">企業調査</div>
             </div>
             <div className="columns">
-              <div className="column is-3">詐欺調査</div>
-              <div className="column is-3">金銭トラブル調査</div>
+              <div className="column is-3 tyo">詐欺調査</div>
+              <div className="column is-3 tyo">金銭トラブル調査</div>
             </div>
             <div className="columns">
-              <div className="column is-3">ストーカー調査</div>
-              <div className="column is-3">盗聴器発見調査</div>
+              <div className="column is-3 tyo">ストーカー調査</div>
+              <div className="column is-3 tyo">盗聴器発見調査</div>
             </div>
           </div>
+
+          <Link to="/mouri_detective_office_hp">
+            <button
+              className="button back_button"
+              style={{ fontSize: "2vmax" }}
+            >
+              back
+            </button>{" "}
+          </Link>
         </div>
-        <Link to="/mouri_detective_office_hp">
-          <button>back</button>{" "}
-        </Link>
       </div>
+      <footer className="footer">
+        <div
+          className="content has-text-centered"
+          style={{ fontSize: "1.8vmax" }}
+        >
+          @mourikogorou
+        </div>
+      </footer>
     </div>
   );
 };
@@ -140,10 +249,53 @@ const Item = () => {
 const Flow = () => {
   return (
     <div>
-      調査の流れ
-      <Link to="/mouri_detective_office_hp">
-        <button>back</button>
-      </Link>
+      <div className="Body_bw">
+        <div className="hero-body">
+          <h
+            className="title is-0"
+            style={{
+              color: "black",
+              fontFamily: "MS PMincho",
+              fontSize: "7.8vw",
+              paddingBottom: "1vmin",
+            }}
+          >
+            調査の流れ
+          </h>
+
+          <div className="section">
+            <ul className="flow">1.ご相談</ul>
+            <p style={{ fontSize: "1.8vmax" }}>
+              無料です。お気軽にご相談下さい
+            </p>
+            <ul className="flow">2.アドバイス</ul>
+            <ul className="flow">3.お見積り</ul>
+            <ul className="flow">4.ご契約</ul>
+            <ul className="flow">5.予備調査</ul>
+            <ul className="flow">6.本調査</ul>
+            <ul className="flow">7.中間報告</ul>
+            <ul className="flow">8.報告書提出</ul>
+            <ul className="flow">9.アフターフォロー</ul>
+          </div>
+
+          <Link to="/mouri_detective_office_hp">
+            <button
+              className="button back_button"
+              style={{ fontSize: "2vmax" }}
+            >
+              back
+            </button>
+          </Link>
+        </div>
+      </div>
+      <footer className="footer">
+        <div
+          className="content has-text-centered"
+          style={{ fontSize: "1.8vmax" }}
+        >
+          @mourikogorou
+        </div>
+      </footer>
     </div>
   );
 };
@@ -151,9 +303,8 @@ const Flow = () => {
 const Home = () => {
   return (
     <div>
-      <header></header>
       <body>
-        <div className="Body">
+        <div className="Body_bw">
           <div className="hero-body">
             <h
               className="title is-0"
@@ -168,10 +319,12 @@ const Home = () => {
               <br></br>
               探偵事務所
             </h>
-            <p>お困りのことがあったら、</p>
-            <p>いつでもご依頼を！</p>
-            <p>眠りの小五郎がバッチリ</p>
-            <p style={{ paddingBottom: "1vh" }}>解決いたします！</p>
+            <p className="home_p">お困りのことがあったら、</p>
+            <p className="home_p">いつでもご依頼を！</p>
+            <p className="home_p">眠りの小五郎がバッチリ</p>
+            <p className="home_p" style={{ paddingBottom: "1vh" }}>
+              解決いたします！
+            </p>
 
             <div className="columns">
               <div className="column is-3">
@@ -206,7 +359,7 @@ const Home = () => {
 
             <div className="columns">
               <div className="column is-3">
-                <Link to="/mouri_detective_office_hp/profile">
+                <Link to="/mouri_detective_office_hp/flow">
                   <button
                     className="button is-rounded"
                     style={{
@@ -220,7 +373,7 @@ const Home = () => {
                 </Link>
               </div>
               <div className="column is-3" style={{ width: "90%" }}>
-                <Link to="/mouri_detective_office_hp/profile">
+                <Link to="/mouri_detective_office_hp/overview">
                   <button
                     className="button is-rounded"
                     style={{
@@ -269,7 +422,12 @@ const Home = () => {
         </div>
       </body>
       <footer className="footer">
-        <div className="content has-text-centered">@mourikogorou</div>
+        <div
+          className="content has-text-centered"
+          style={{ fontSize: "1.8vmax" }}
+        >
+          @mourikogorou
+        </div>
       </footer>
     </div>
   );
@@ -289,13 +447,13 @@ const App = () => {
           <Route path="/mouri_detective_office_hp/flow" component={Flow} />
           <Route
             path="/mouri_detective_office_hp/overview"
-            component={OverViwe}
+            component={OverView}
           />
-          <Router
+          <Route
             path="/mouri_detective_office_hp/contact"
             component={Contact}
           />
-          <Router
+          <Route
             path="/mouri_detective_office_hp/question"
             component={Qestion}
           />
