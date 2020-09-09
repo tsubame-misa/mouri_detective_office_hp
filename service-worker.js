@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/mouri_detective_office_hp/precache-manifest.d4d6ba3cf0e8d0fc2eb26375f46c4cd5.js"
+  "/mouri_detective_office_hp/precache-manifest.58718a3089cf148d14520ea830dcab47.js"
 );
 
 self.addEventListener('message', (event) => {
